@@ -7,7 +7,7 @@ description: """
 maintainer: "pomin5@trustable.ai"
 authors: "Pomin Wu"
 license: "MIT"
-homepage: "https://github.com/trustableai"
+homepage: "https://trustableai.github.io/ocaml-starter-kit/"
 bug-reports: "https://github.com/trustableai/ocaml-starter-kit/issues"
 dev-repo: "https://github.com/trustableai/ocaml-starter-kit/issues"
 depends: [
