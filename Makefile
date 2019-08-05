@@ -18,9 +18,6 @@ install-prod:
 lock:
 	opam lock
 
-$(BIN): $$@.ml
-	ocamlc -o $@ $<
-
 .PHONY: clean
 clean:
 	dune clean

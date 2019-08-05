@@ -2,22 +2,17 @@ opam-version: "2.0"
 name: "app"
 version: "0.1"
 synopsis: "My very awesome project"
-description: """
-"""
 maintainer: "pomin5@trustable.ai"
 authors: "Pomin Wu"
 license: "MIT"
 homepage: "https://trustableai.github.io/ocaml-starter-kit/"
 bug-reports: "https://github.com/trustableai/ocaml-starter-kit/issues"
-dev-repo: "https://github.com/trustableai/ocaml-starter-kit/issues"
+dev-repo: "git+https://github.com/trustableai/ocaml-starter-kit/"
 depends: [
-  "dune" {build}
-  "opam-lock" {dev}
-  "utop" {dev}
-  "ocp-indent" {dev}
-  "merlin" {dev}
-  "ounit" {dev}
-  "core"
+  "base-threads" {= "base"}
+  "base-unix" {= "base"}
+  "dune" {= "1.10.0"}
+  "ocaml" {= "4.08.0"}
 ]
 build: [
   ["dune" "build" "-p" name "-j" jobs]
