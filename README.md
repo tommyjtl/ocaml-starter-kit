@@ -63,7 +63,7 @@ Starter kit for OCaml projects and instructions for development environment.
 Use the following commands when creating a local switch for deployment, so that dependencies are pinned/locked:
 
 ```shell
-$ opam switch create . 4.08.0 --deps-only
+$ opam switch create . 4.08.0 --deps-only --lock
 # or if you already have a local switch in _opam
 $ opam install . --deps-only --lock
 $ eval $(opam env)

@@ -8,13 +8,16 @@ BIN=$(SRC:.ml=.exe)
 all: build
 	dune exec ./src/main.exe
 
+.PHONY: install
 install:
 	opam install . --deps-only
 	make lock
 
+.PHONY: install-prod
 install-prod:
 	opam install . --deps-only --lock
 
+.PHONY: lock
 lock:
 	opam lock
 
